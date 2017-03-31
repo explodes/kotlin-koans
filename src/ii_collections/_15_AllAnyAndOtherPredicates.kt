@@ -14,7 +14,7 @@ fun example2(list: List<Int>) {
 }
 
 fun Customer.isFrom(city: City): Boolean = this.city == city
-fun Shop.checkAllCustomersAreFrom(city: City): Boolean = customers.all { it -> it.isFrom(city) }
-fun Shop.hasCustomerFrom(city: City): Boolean = customers.any { it -> it.isFrom(city) }
-fun Shop.countCustomersFrom(city: City): Int = customers.count { it -> it.isFrom(city) }
-fun Shop.findAnyCustomerFrom(city: City): Customer? = customers.firstOrNull { it -> it.isFrom(city) }
+fun Shop.checkAllCustomersAreFrom(city: City): Boolean = customers.all { it.isFrom(city) }
+fun Shop.hasCustomerFrom(city: City): Boolean = customers.any { it.isFrom(city) }
+fun Shop.countCustomersFrom(city: City): Int = customers.count { it.isFrom(city) }
+fun Shop.findAnyCustomerFrom(city: City): Customer? = customers.firstOrNull { it.isFrom(city) }

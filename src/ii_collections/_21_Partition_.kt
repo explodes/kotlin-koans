@@ -12,5 +12,12 @@ fun example8() {
 
 fun Shop.getCustomersWithMoreUndeliveredOrdersThanDelivered(): Set<Customer> {
     // Return customers who have more undelivered orders than delivered
-    todoCollectionTask()
+    return customers.filter {
+        it.orders.partition { it.isDelivered }.map { a, b -> b.size > a.size }
+    }.toSet()
 }
+
+/**
+ * functional programming hackery for Pair<A,B>
+ */
+fun <A, B, R> Pair<A, B>.map(block: (A, B) -> R) = block(this.first, this.second)
