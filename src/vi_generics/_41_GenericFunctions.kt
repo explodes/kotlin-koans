@@ -35,5 +35,7 @@ fun List<String>.partitionWordsAndLines(): Pair<List<String>, List<String>> {
 }
 
 fun Set<Char>.partitionLettersAndOtherSymbols(): Pair<Set<Char>, Set<Char>> {
+    // similar bytecode, same functionality, arguably less readable:
+    // return partitionTo(HashSet<Char>(), HashSet()) { (it >= 'a' && it <= 'z') || (it >= 'A' && it <= 'Z') }
     return partitionTo(HashSet<Char>(), HashSet()) { c -> c in 'a'..'z' || c in 'A'..'Z' }
 }
