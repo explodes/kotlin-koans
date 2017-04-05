@@ -28,7 +28,7 @@ fun useObject() {
     Singleton.foo()
 }
 
-class Outer(private val bar : Int) {
+class Outer(private val bar: Int) {
 
     // Classes can be nested within other classes
     class Nested() {

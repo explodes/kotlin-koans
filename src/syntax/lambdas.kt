@@ -11,9 +11,9 @@ fun fullSyntacticFormOfFunctionLiterals() {
     apply(sum)
 
     // If you need to specify the return type (and the receiver type for an extension lambda), you can use a function expression
-    apply(fun (x: Int, y: Int): Int = x + y)
+    apply(fun(x: Int, y: Int): Int = x + y)
 
-    val sum1 = fun (x: Int, y: Int): Int { return x + y }
+    val sum1 = fun(x: Int, y: Int): Int { return x + y }
     apply(sum1)
 
     // If an expression has one parameter, that parameter is by default named 'it'

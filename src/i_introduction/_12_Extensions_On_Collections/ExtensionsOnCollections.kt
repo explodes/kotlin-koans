@@ -17,7 +17,7 @@ fun todoTask12(): Nothing = TODO(
 )
 
 fun List<Int>.sortedDescending(): List<Int> {
-    return sortedWith(object :Comparator<Int>{
+    return sortedWith(object : Comparator<Int> {
         override fun compare(p0: Int?, p1: Int?): Int {
             return (p1 ?: 0) - (p0 ?: 0)
         }

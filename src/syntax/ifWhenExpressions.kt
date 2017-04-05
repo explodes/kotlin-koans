@@ -6,8 +6,7 @@ fun ifExpression(a: Int, b: Int) {
     val max2 = if (a > b) {
         println("Choose a")
         a
-    }
-    else {
+    } else {
         println("Choose b")
         b
     }

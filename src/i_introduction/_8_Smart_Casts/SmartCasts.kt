@@ -15,10 +15,10 @@ fun eval(e: Expr): Int =
         }
 
 fun todoTask8(expr: Expr): Nothing = TODO(
-    """
+        """
         Task 8.
         Rewrite 'JavaCode8.eval()' in Kotlin using smart casts and 'when' expression.
     """,
-    documentation = doc8(),
-    references = { JavaCode8().eval(expr) })
+        documentation = doc8(),
+        references = { JavaCode8().eval(expr) })
 

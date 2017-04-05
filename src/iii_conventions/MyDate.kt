@@ -1,7 +1,5 @@
 package iii_conventions
 
-import java.util.*
-
 data class MyDate(val year: Int, val month: Int, val dayOfMonth: Int) : Comparable<MyDate> {
 
     override operator fun compareTo(other: MyDate) = magnitude() - other.magnitude()

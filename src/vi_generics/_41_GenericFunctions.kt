@@ -2,7 +2,6 @@ package vi_generics
 
 import util.TODO
 import java.util.*
-import java.util.function.BiPredicate
 
 fun task41(): Nothing = TODO(
         """

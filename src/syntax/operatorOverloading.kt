@@ -24,6 +24,7 @@ interface A
 interface B {
     //unary operations
     operator fun unaryPlus()
+
     operator fun unaryMinus()
 
     operator fun inc(): B
@@ -31,6 +32,7 @@ interface B {
 
     //binary operations
     operator fun plus(a: A): B
+
     operator fun minus(a: A): B
     operator fun times(a: A): B
     operator fun div(a: A): B

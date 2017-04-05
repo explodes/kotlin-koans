@@ -16,7 +16,7 @@ class A {
         }
 
     val propertyWithoutBackingField: Int
-       get() = 42
+        get() = 42
 }
 
 // Extension properties cannot have a backing field
